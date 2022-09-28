@@ -1,0 +1,11 @@
+version: '3'
+services:
+  moyu:
+    image: gzxhwq/sing-box:latest
+    container_name: chouxiaoya
+    volumes: 
+      - ./config.json:/etc/sing-box/config.json
+    expose: 
+      - "2432"
+    ports: 
+      - "443:443"
